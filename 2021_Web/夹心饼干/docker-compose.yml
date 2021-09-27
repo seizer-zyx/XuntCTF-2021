@@ -1,0 +1,7 @@
+version: "2"
+services:
+  web:
+    build: .
+    image: ctftraining/web12
+    ports:
+      - "10087:80"

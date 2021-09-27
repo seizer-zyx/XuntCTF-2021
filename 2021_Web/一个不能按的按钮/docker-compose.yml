@@ -1,0 +1,9 @@
+version: "2"
+services:
+  web:
+    build: .
+    image: ctftraining/web8
+    ports:
+      - "10082:80"
+    environment:
+      - FLAG=flag{fa966345577ba81af19408f203db968f}
