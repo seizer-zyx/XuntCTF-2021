@@ -1,0 +1,155 @@
+<style type="text/css">
+    body {
+      background-image: url(https://gitee.com/seizer-zyx/picgo/raw/master/background/202109061737652.png);
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    }
+    
+    #mainDock {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 500px;
+        font-family: "Questrial", Impact, sans-serif;
+    }
+    
+    #particles-js {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0
+    }
+    
+    span#xunt_one {
+        color: #93d8d1;
+        font-family: "Fira Code";
+        display: inline;
+        z-index: 99;
+    }
+    
+    span#xunt_two {
+        color: #f9a586;
+        font-family: "Fira Code";
+        display: inline;
+        z-index: 99;
+    }
+    
+    span#welcome_one {
+        color: #93d8d1;
+        font-family: "Fira Code";
+        display: inline;
+        z-index: 99;
+    }
+    
+    span#welcome_two {
+        color: #f9a586;
+        font-family: "Fira Code";
+        display: inline;
+        z-index: 99;
+    }
+    
+    p#fin {
+        color: white;
+        font-family: "Fira Code";
+        z-index: 99;
+    }
+    
+    a#loginButton {
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #8458ff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+    
+    a#loginButton:visited {
+        color: #8458ff;
+    }
+    
+    a#loginButton:hover {
+        color: rgb(43, 51, 0);
+        background: #d3ffdf;
+        border-radius: 3px;
+        box-shadow: 0 0 10px #d3ffdf, 0 0 20px #d3ffdf, 0 0 30px #d3ffdf;
+        transition-delay: 1000ms;
+    }
+    
+    a#loginButton span {
+        position: absolute;
+        display: block;
+    }
+    
+    a#loginButton span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #e6987c);
+    }
+    
+    a#loginButton:hover span:nth-child(1) {
+        left: 100%;
+        transition: 600ms;
+    }
+    
+    a#loginButton span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #abffc1);
+    }
+    
+    a#loginButton:hover span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 250ms;
+    }
+    
+    a#loginButton span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #e6987c);
+    }
+    
+    a#loginButton:hover span:nth-child(2) {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 100ms;
+    }
+    
+    a#loginButton span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #abffc1);
+    }
+    
+    a#loginButton:hover span:nth-child(4) {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 450ms;
+    }
+</style>
+
+<div id="mainDock">
+    <h1><span id="xunt_one"> Welcome T</span><span id="xunt_two">o XuntCTF 2021 </span></h1>
+    <h2><span id="welcome_one"> 西安邮电</span><span id="welcome_two">大学网络科技协会 </span></h2>
+    <div id="particles-js"><canvas class="particles-js-canvas-el" width="1920" height="668" style="width: 100%; height: 100%;"></canvas></div><br><br>
+    <div class="bouton">
+        <a id="loginButton" href="/challenges">
+            <span></span><span></span><span></span><span></span> Go!
+        </a>
+    </div>
+</div>
